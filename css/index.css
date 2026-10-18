@@ -11,6 +11,7 @@ body {
     margin: 0;
     font-family: Exo, sans-serif;
     font-size: 1rem;
+    color:#333;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -28,12 +29,19 @@ img {
 .container {
     width: 70%;
     margin: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.bg-color {
+    background-color: #F7F5FF;
 }
 
 .header {
-    background-color: #F5F3FF;
     border-bottom: 1px solid #ddd6ff;
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 .header .container {
@@ -90,14 +98,11 @@ img {
 
 .home {
     padding: 176px 0 96px;
-    position: fixed;
-    color: #333333;
     min-height: 100vh;
 }
 
 .home .container {
     display: flex;
-    padding: 0 24px;
     justify-content: space-between;
 }
 
@@ -130,7 +135,6 @@ img {
 }
 
 .home .product-info {
-    /* background-color: yellow; */
     width: 47%;
 }
 
@@ -225,4 +229,91 @@ img {
 .home .wishlist {
     background-color: #fff;
     border: 2px solid #D1D5DC;
+}
+
+.specifications {
+    position: relative;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.special-heading {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.special-heading h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    line-height: 40px;
+}
+
+.special-heading span {
+    color: #8E51FF;
+}
+
+.special-heading p {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.card {
+    border: 1px solid #ede9fe;
+    border-radius: 24px;
+    padding: 32px;
+    background-color: #fff;
+}
+
+.specifications .icon {
+    margin-bottom: 24px;
+    border-radius: 16px;
+    background-color: gray;
+    width: fit-content;
+    padding: 10px;
+}
+
+.specifications .icon img {
+    width: 24px;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 24px;
+}
+
+.features .card {
+    width: 32%;
+}
+
+.features .card .icon {
+}
+
+.features .footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.creator.card {
+    margin-top: 48px;
+    padding: 40px;
+    background-color: #7F22FE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.creator a {
+    color: #7F22FE;
+    background-color: #fff;
+    padding: 16px 28px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
 }
