@@ -136,6 +136,8 @@ img {
 
 .badges {
     margin-bottom: 16px;
+    display: flex;
+    gap: 12px
 }
 
 .badges span {
@@ -145,11 +147,11 @@ img {
     background-color: #A684FF;
     font-size: 14px;
     font-weight: 600;
-    margin-right: 12px;
+    line-height: 20px;
 }
 
 .home h1 {
-    font-size: 48px;
+    font-size: 47px;
     margin-bottom: 16px;
 }
 
