@@ -272,11 +272,11 @@ img {
     border-radius: 16px;
     background-color: gray;
     width: fit-content;
-    padding: 10px;
+    padding: 15px;
 }
 
 .specifications .icon img {
-    width: 24px;
+    width: 28px;
 }
 
 .features {
@@ -288,14 +288,98 @@ img {
 
 .features .card {
     width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
-.features .card .icon {
+.features .card-upper .leading {
+    line-height: 26px;
+    margin-bottom: 0;
 }
+
+.features .card-upper h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.features .feature {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 8px;
+    letter-spacing: 0.7px;
+}
+
+.features .camera .icon {
+    background-color: #EDE9FE;
+}
+
+.features .camera .feature {
+    color: #8E51FF;
+}
+
+.features .photography .icon {
+    background-color: #CEFAFE;
+}
+
+.features .photography .feature {
+    color: #0092B8;
+}
+
+.features .endurance .icon {
+    background-color: #D0FAE5;
+}
+
+.features .endurance .feature {
+    color: #009966;
+}
+
+.features .connectivity .icon {
+    background-color: #FFEDD4;
+}
+
+.features .connectivity .feature {
+    color: #F54A31;
+}
+
+.features .safety .icon {
+    background-color: #DFF2FE;
+}
+
+.features .safety .feature {
+    color: #0084D1;
+}
+
+.features .performance .icon {
+    background-color: #FFE4E6;
+}
+
+.features .performance .feature {
+    color: #EC003F;
+}
+
 
 .features .footer {
     display: flex;
     flex-direction: column;
+    border-top: 1px solid #EEE9F5;
+    padding-top: 20px;
+    margin-top: 28px;
+    gap: 2.4px;
+}
+
+.footer span {
+    color: #777;
+    font-size: 14px;
+}
+
+.features .footer .unit {
+    color: #6b4ea0;
+    font-weight: 800;
+    font-size: 25px;
 }
 
 .creator.card {
@@ -308,6 +392,17 @@ img {
     color: #FFFFFF;
 }
 
+.creator .made-for {
+    font-weight: 600;
+    color: #DDD6FF;
+    margin-bottom: 8px;
+}
+
+.creator h3 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
 .creator a {
     color: #7F22FE;
     background-color: #fff;
@@ -316,4 +411,14 @@ img {
     text-decoration: none;
     font-size: 16px;
     font-weight: 700;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.creator a span {
+    padding: 0 5px;
+    font-size: 12px;
+    border-radius: 50%;
+    border: 1px dashed #7F22FE;
 }
