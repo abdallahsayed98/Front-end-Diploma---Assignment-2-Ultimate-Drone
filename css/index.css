@@ -624,13 +624,13 @@ img {
     font-size: 18px;
 }
 
-.reviews .loading {
+.loading {
     display: flex;
     justify-content: center;
     padding-top: 32px;
 }
 
-.reviews button {
+.loading button {
     border-radius: 38px;
     background-color: #7F22FE;
     color: #fff;
@@ -642,13 +642,94 @@ img {
     border: 2px solid #7F22FE;
 }
 
-.reviews button:hover {
+.loading button:hover {
     color: #7F22FE;
     background-color: #fff;
 }
 
+.related-products .products {
+    display: flex;
+    justify-content: space-between;
+}
 
+.related-products .card {
+    padding: 24px;
+    width: 22.55%;
+    border-radius: 16px;
+    border-width: 2px;
+}
 
+.related-products .product-img {
+    position: relative;
+    margin-bottom: 24px;
+}
 
+.related-products img {
+    border-radius: 12px;
+}
+
+.related-products .badge {
+    position: absolute;
+    border-radius: 28px;
+    padding: 4px 12px;
+    color: #fff;
+    background-color: #00BBA7;
+    top: 15px;
+    left: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.related-products .badge-2 {
+    background-color: #00C950;
+}
+
+.related-products .badge-3 {
+    background-color: #00B8DB;
+}
+
+.related-products .badge-4 {
+    background-color: #FF6900;
+}
+
+.product-data h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 8px;
+}
+
+.product-data p {
+    margin-bottom: 16px;
+}
+
+.product-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-price span {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.product-price button {
+    border-radius: 38px;
+    background-color: #8E51FF;
+    color: #fff;
+    width: fit-content;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border: 1px solid #7F22FE;
+}
+
+.related-products .loading {
+    margin-top: 48px;
+    padding: 0;
+}
 
 
