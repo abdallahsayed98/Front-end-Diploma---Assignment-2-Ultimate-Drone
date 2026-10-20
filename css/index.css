@@ -22,13 +22,24 @@ img {
     display: block;
 }
 
+.object-cover {
+    object-fit: cover;
+}
+
 .w-100 {
     width: 100%;
 }
 
+.h-500px {
+    height: 500px;
+}
+
+.display-none {
+    display: none;
+}
+
 .container {
-    width: 70%;
-    margin: auto;
+    width: 100%;
     padding-left: 24px;
     padding-right: 24px;
 }
@@ -39,14 +50,15 @@ img {
 
 .header {
     border-bottom: 1px solid #ddd6ff;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 999;
 }
 
 .header .container {
     display: flex;
-    justify-content: space-between;
     padding: 16px 24px;
     align-items: center;
 }
@@ -78,24 +90,6 @@ img {
     height: 22.5px;
 }
 
-.nav {
-    display: flex;
-    column-gap: 32px;
-    margin-right: 48px;
-    align-items: center;
-}
-
-.nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-}
-
-.nav .home-link {
-    color: #7f22fe;
-    border-bottom: 2px solid #7f22fe;
-}
-
 .home {
     padding: 176px 0 96px;
     min-height: 100vh;
@@ -103,12 +97,12 @@ img {
 
 .home .container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 64px;
 }
 
 .home .hero {
     border: 2px solid #E0E3E7;
-    width: 48%;
     border-radius: 24px;
     overflow: hidden;
     padding: 20px;
@@ -117,7 +111,6 @@ img {
 
 .home .hero img {
     border-radius: 16px;
-    height: 500px;
 }
 
 .home .hero span {
@@ -128,14 +121,17 @@ img {
     background-color: #8E51FF;
     top: 40px;
     left: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
 }
 
 .home .icon {
     width: 18px;
 }
 
-.home .product-info {
-    width: 47%;
+.home .product-card-header {
+    margin-bottom: 32px;
 }
 
 .badges {
@@ -155,8 +151,10 @@ img {
 }
 
 .home h1 {
-    font-size: 47px;
+    font-size: 48px;
+    font-weight: 700;
     margin-bottom: 16px;
+    line-height: 60px;
 }
 
 .home h1 span {
@@ -165,8 +163,7 @@ img {
 
 .home p {
     font-size: 20px;
-    line-height: 32px;
-    margin-bottom: 32px;
+    line-height: 32.5px;
 }
 
 .prices-container {
@@ -182,6 +179,7 @@ img {
 .prices span {
     font-size: 36px;
     font-weight: 700;
+    line-height: 40px;
 }
 
 .prices del {
@@ -203,6 +201,8 @@ img {
 
 .home .offer {
     font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0;
 }
 
 .buttons button {
@@ -213,15 +213,17 @@ img {
     align-items: center;
     font-weight: 700;
     font-size: 18px;
+    line-height: 28px;
 }
 
 .buttons button .icon {
+    width: 22.5px;
     margin-right: 12px;
 }
 
 .home .cart {
     background-color: #8E51FF;
-    border: 2px solid #8E51FF;
+    border: none;
     margin-bottom: 16px;
     color: #fff;
 }
@@ -271,7 +273,11 @@ img {
     margin-bottom: 24px;
     border-radius: 16px;
     width: fit-content;
-    padding: 15px;
+    display: flex;
+    width: 56px;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
 }
 
 .specifications .icon img {
@@ -286,7 +292,6 @@ img {
 }
 
 .features .card {
-    width: 32%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -301,6 +306,7 @@ img {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 12px;
+    line-height: 32px;
 }
 
 .features .feature {
@@ -360,7 +366,6 @@ img {
     color: #EC003F;
 }
 
-
 .features .footer {
     display: flex;
     flex-direction: column;
@@ -373,12 +378,14 @@ img {
 .features .footer span {
     color: #777;
     font-size: 14px;
+    line-height: 21px;
 }
 
 .features .footer .unit {
     color: #6b4ea0;
     font-weight: 800;
-    font-size: 25px;
+    font-size: 25.6px;
+    line-height: 38.4px;
 }
 
 .creator.card {
