@@ -1,8 +1,19 @@
 /* sm */
-@media (min-width: 640px) {}
+@media (min-width: 640px) {
+    .sm-w-48 {
+        width: 48%;
+    }
+}
 
 /* md */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .creator.card {
+        flex-direction: row;
+    }
+    .creator h3 {
+        font-size: 30px;
+    }
+}
 
 /* lg */
 @media (min-width: 1024px) {
@@ -25,7 +36,7 @@
     }
 
     .lg-container {
-        width: 80rem;
+        max-width: 80rem;
         margin: auto;
     }
 
@@ -39,6 +50,22 @@
 
     .lg-w-32 {
         width: 32%;
+    }
+
+    .lg-w-30 {
+        width: 30.5%;
+    }
+
+    .lg-w-66 {
+        width: 66%;
+    }
+
+    .lg-flex-row {
+        flex-direction: row;
+    }
+
+    .lg-position-sticky {
+        position: sticky;
     }
 
     .home .lg-container {
