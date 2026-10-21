@@ -218,6 +218,11 @@ img {
     font-weight: 700;
     font-size: 18px;
     line-height: 28px;
+    transition-duration: 0.2s;
+}
+
+.buttons button:hover {
+    scale: 1.03;
 }
 
 .buttons button .icon {
@@ -689,40 +694,52 @@ img {
 
 .loading button {
     border-radius: 38px;
-    background-color: #8e51ff;
-    color: #fff;
+    background-color: #fff;
+    color: #7f22fe;
     width: fit-content;
     padding: 12px 32px;
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
-    border: 2px solid #8e51ff;
+    border: 2px solid #7f22fe;
+}
+
+.products-container .loading button {
+    background-color: #F7F5FF;
 }
 
 .loading button:hover {
-    color: #7F22FE;
-    background-color: #fff;
+    color: #fff;
+    background-color: #7f22fe;
 }
 
 .related-products .products {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 32px;
+    /* justify-content: space-between; */
 }
 
 .related-products .card {
     padding: 24px;
-    width: 22.55%;
     border-radius: 16px;
     border-width: 2px;
+}
+
+.related-products .card:hover img {
+    scale: 105%;
 }
 
 .related-products .product-img {
     position: relative;
     margin-bottom: 24px;
+
 }
 
 .related-products img {
     border-radius: 12px;
+    height: 192px;
 }
 
 .related-products .badge {
@@ -800,14 +817,16 @@ img {
 
 .footer-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin-bottom: 48px;
+    row-gap: 24px;
 }
 
 .footer-container .menu {
-    width: 22%;
     display: flex;
     flex-direction: column;
+    row-gap: 12px;
 }
 
 .footer-container .menu-items h3 {
@@ -819,7 +838,6 @@ img {
 
 .footer-container .menu-items span {
     color: #99a1af;
-    margin-bottom: 16px;
     line-height: 24px;
 }
 
@@ -867,20 +885,37 @@ img {
 }
 
 .footer-section .media-icon {
-    width: 15%;
+    width: 40px;
+    height: 40px;
     background-color: #1e2939;
-    padding: 10px;
     border-radius: 8px;
 }
 
+.footer-section .media-icon img {
+    padding: 10px;
+}
+
 .footer-section .media-icon:hover {
+    background-color: #1877F2;
+}
+
+.footer-section .media-icon.twitter:hover{
     background-color: #1DA1F2;
+}
+
+.footer-section .media-icon.instagram:hover{
+    background-color: #E4405F;
+}
+
+.footer-section .media-icon.youtube:hover{
+    background-color: #FF0000;
 }
 
 .footer-section .rights {
     padding-top: 32px;
     border-top: 1px solid #1E2939;
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -888,7 +923,6 @@ img {
     color: #fff;
     font-size: 14px;
     line-height: 20px;
-    width: 50%;
     display: flex;
     align-items: center;
     margin-bottom: 0;
@@ -896,19 +930,18 @@ img {
 
 .payment-methods {
     display: flex;
-    gap: 12px;
-    justify-content: flex-end;
-    width: 50%;
+    gap: 24px;
+    margin-top: 16px;
+    justify-content: space-between;
 }
 
 .payment-methods .method {
     background-color: #FFFFFF;
-    width: 13.6%;
     height: 40px;
-    padding: 10px;
+    padding: 12px;
     border-radius: 8px;
 }
 
 .payment-methods .method img {
-    height: 100%;
+    height: 16px
 }
